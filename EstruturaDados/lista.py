@@ -1,12 +1,15 @@
 animais = ["leao", "gato", "gaivota", "baleia azul"]
 
-#.append --> coloca algo no final da lista
-#.insert --> coloca algo na posicao determinada na lista
-#.remove --> remove algo da lista
+# -- todos esses modificam a lista original
+#.append(elemento) --> coloca algo no final da lista
+#.insert(indice, valor) --> coloca algo na posicao determinada na lista
+#.remove() --> remove algo da lista
+#.pop(indice) se nao botar indice vai do padrao --> remove itens da lista original
 animais.append("vaca")
 animais.insert(1, "hipopotamo") #indice, oq vai inserir
-
 animais.remove("leao")
+animais.pop() #ou
+animais.pop(3) # ambos removem o ultimo elemento
 
 #printa o indice do objeto na lista
 print(animais.index("gato"))
@@ -17,7 +20,7 @@ animais.reverse()
 #literalmente copia uma lista
 nova_lista = animais.copy()
 
-#bota em ordem alfabetica
+#bota em ordem alfabetica, modifica a lista original
 nova_lista.sort()
 
 print(nova_lista)
